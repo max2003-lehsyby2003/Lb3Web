@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+
+    <h:body>
+    <h1>Встановлення початкових значень</h1>
+
+    <h:form action="calculator" method="post">
+
+
+        <p><h:outputLabel value="a"/>
+        <h:inputText value="#{calculatorServlet.a}"/></p>
+
+        <p> <h:outputLabel value="b"/>
+       <h:inputText value="#{calculatorServlet.b}"/></p>
+
+        <p><h:outputLabel value="старт"/>
+        <h:inputText value="#{calculatorServlet.start}"/></p>
+
+        <p><h:outputLabel value="конец"/>
+        <h:inputText value="#{calculatorServlet.end}"/></p>ыц
+
+        <p><h:outputLabel value="шаг"/>
+        <h:inputText value="#{calculatorServlet.step}"/></p>
+
+
+        <p><h:commandButton value="калькуляция" action="#{calculatorServlet.calculate}"/></p>
+
+    </h:form>
+
+    </h:body>
+</f:view>
+</html>
